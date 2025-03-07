@@ -42,7 +42,7 @@ classDiagram
 
 ## Documentação da API (Swagger)
 
-## [https://decola-tech-dio-api-production.up.railway.app/swagger-ui.html](https://decola-tech-dio-api-production.up.railway.app/swagger-ui.html)
+## [https://decola-tech-dio-api-production.up.railway.app/swagger-ui/index.html](https://decola-tech-dio-api-production.up.railway.app/swagger-ui/index.html)
 
 
 
