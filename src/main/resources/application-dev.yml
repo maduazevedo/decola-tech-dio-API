@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:dioteste}
-    username: ${DATABASE_USER:postgres}
-    password: ${DATABASE_PASSWORD:admin}
+    url: jdbc:postgresql://turntable.proxy.rlwy.net:20162/railway
+    username: postgres
+    password: GYMbraeLdZMWZTyWfhswNsRQLpTPxWdo
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
