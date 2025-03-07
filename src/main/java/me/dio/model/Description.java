@@ -18,64 +18,50 @@ import jakarta.persistence.*;
         @Column(length = 50, nullable = false)
         private String possibleCause;
 
-
-        @OneToOne
-        @JoinColumn(name = "id_erro_pk", nullable = false, unique = true)
-        private Erro erro;
-
-
         @Column(length = 50, nullable = false)
         private String impact;
 
 
-    public Long getId_description() {
-        return id_description;
-    }
+        public Long getId_description() {
+            return id_description;
+        }
 
-    public void setId_description(Long id_description) {
-        this.id_description = id_description;
-    }
+        public void setId_description(Long id_description) {
+            this.id_description = id_description;
+        }
 
-    public String getModule() {
-        return module;
-    }
+        public String getModule() {
+            return module;
+        }
 
-    public void setModule(String module) {
-        this.module = module;
-    }
+        public void setModule(String module) {
+            this.module = module;
+        }
 
-    public String getFile() {
-        return file;
-    }
+        public String getFile() {
+            return file;
+        }
 
-    public void setFile(String file) {
-        this.file = file;
-    }
+        public void setFile(String file) {
+            this.file = file;
+        }
 
-    public String getPossibleCause() {
-        return possibleCause;
-    }
+        public String getPossibleCause() {
+            return possibleCause;
+        }
 
-    public void setPossibleCause(String possibleCause) {
-        this.possibleCause = possibleCause;
-    }
+        public void setPossibleCause(String possibleCause) {
+            this.possibleCause = possibleCause;
+        }
 
-    public String getImpact() {
-        return impact;
-    }
+        public String getImpact() {
+            return impact;
+        }
 
-    public void setImpact(String impact) {
-        this.impact = impact;
-    }
+        public void setImpact(String impact) {
+            this.impact = impact;
+        }
 
-    public Erro getErro() {
-        return erro;
-    }
-
-    public void setErro(Erro erro) {
-        this.erro = erro;
-
-    }
 
 }
 

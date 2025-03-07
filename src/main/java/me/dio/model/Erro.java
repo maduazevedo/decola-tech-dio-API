@@ -18,10 +18,13 @@ public class Erro {
     @Column(nullable = false)
     private Date registrationTime;
 
-
     @ManyToOne
     @JoinColumn(name = "user_id_pk", nullable = false)
     private User user;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_description_pk", nullable = true, unique = true)
+    private Description description;
 
 
     public Long getId_erro() {
@@ -54,5 +57,12 @@ public class Erro {
 
     public void setUser(User user) {
         this.user = user;
+    }
+
+    public Description getDescription() {
+        return description;
+    }
+    public void setDescription(Description description) {
+        this.description = description;
     }
 }
